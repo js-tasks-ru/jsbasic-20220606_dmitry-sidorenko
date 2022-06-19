@@ -1,3 +1,7 @@
 function camelize(str) {
-  // ваш код...
+  return str.split('-').reduce(reducer);
+}
+
+function reducer(prev, cur) {
+  return prev + (cur[0].toUpperCase() + cur.slice(1));
 }
