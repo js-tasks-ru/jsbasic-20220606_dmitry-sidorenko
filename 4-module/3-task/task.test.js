@@ -28,7 +28,6 @@ describe('4-module-3-task', () => {
         `;
 
     highlight(table);
-    console.log(table);
     expect(table.querySelector('.js-first').classList.contains('available')).toEqual(true);
     expect(table.querySelector('.js-first').classList.contains('unavailable')).toEqual(false);
 
@@ -124,7 +123,6 @@ describe('4-module-3-task', () => {
         `;
 
     highlight(table);
-    //console.log(table);
     expect(table.querySelector('.js-first').style.textDecoration).toEqual('');
     expect(table.querySelector('.js-second').style.textDecoration).toEqual('line-through');
   });

@@ -3,9 +3,9 @@ function highlight(table) {
 
   for (let row of dataRows) {
     if (row.cells[3].hasAttribute('data-available')) {
-    row.cells[3].getAttribute('data-available') === 'true'
-      ? row.classList.add('available')
-      : row.classList.add('unavailable');
+      row.cells[3].getAttribute('data-available') === 'true'
+        ? row.classList.add('available')
+        : row.classList.add('unavailable');
     } else {
       row.setAttribute('hidden', true);
     }
