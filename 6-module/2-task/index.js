@@ -1,4 +1,5 @@
 export default class ProductCard {
+
   #elem = document.createElement('div');
 
   constructor(product) {
