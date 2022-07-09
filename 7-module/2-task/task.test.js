@@ -8,7 +8,7 @@ describe('7-module-2-task', () => {
   });
 
   afterEach(() => {
-    modal.close();
+    //modal.close();
   });
 
   describe('метод open()', () => {
