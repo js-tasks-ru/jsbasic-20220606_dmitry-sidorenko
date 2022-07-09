@@ -31,7 +31,7 @@ export default class Modal {
   }
 
   open() {
-    document.body.insertAdjacentElement('afterbegin', this.#elem);
+    document.body.querySelector('.container').insertAdjacentElement('afterbegin', this.#elem);
     document.body.classList.add('is-modal-open');
     document.addEventListener('keydown', this.handler);
     this.#elem.querySelector('.modal__close').addEventListener('click', () => this.close());
